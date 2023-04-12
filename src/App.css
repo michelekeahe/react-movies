@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
 
 * {
   margin: 0;
@@ -8,13 +7,15 @@
 }
 
 :root {
-  --font-roboto: "Roboto Slab", serif;
+  --font-montserrat: "Montserrat", serif;
   --font-raleway: "Raleway", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-lato: 'Lato', sans-serif;
 }
 
 body {
-  font-family: var(--font-roboto);
-  background-color: #212426;
+  font-family: var(--font-playfair);
+  background-color: #22223b;
 }
 
 .app {
@@ -31,8 +32,8 @@ h1 {
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgba(201,173,167) 0%,
+    rgba(201,173,167) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -50,28 +51,34 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  background: #4a4e69;
+  -webkit-box-shadow: 5px 5px 7px #0000004e, -5px -5px 7px #0000004e;
+  box-shadow: 5px 5px 7px #0000004e, -5px -5px 7px #0000004e;
 }
 
 .search input {
   flex: 1;
   border: none;
   font-size: 1.5rem;
-  font-family: var(--font-raleway);
+  font-family: var(--font-lato);
   font-weight: 500;
   padding-right: 1rem;
 
   outline: none;
-  color: #a1a1a1;
-  background: #1f2123;
+  color: #f2e9e4;
+  background: #4a4e69;
 }
 
 .search img {
   width: 35px;
   height: 35px;
   cursor: pointer;
+}
+
+.title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* .search button {
@@ -100,8 +107,8 @@ h1 {
 
 .empty h2 {
   font-size: 1.25rem;
-  color: #f9d3b4;
-  font-family: var(--font-raleway);
+  color: #c9ada7;
+  font-family: var(--font-lato);
 }
 
 .container {
@@ -134,7 +141,7 @@ h1 {
   width: 100%;
   opacity: 0;
   top: 0;
-  color: #f9d3b4;
+  color: #c9ada7;
 }
 
 .movie:hover {
@@ -154,7 +161,7 @@ h1 {
 
 .movie div:nth-of-type(3) {
   z-index: 2;
-  background-color: #343739;
+  background-color: #4a4e69;
   padding: 16px 24px 24px 24px;
 
   position: absolute;
@@ -164,18 +171,20 @@ h1 {
 }
 
 .movie div:nth-of-type(3) span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #f0f0f0;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: #c9ada7;
 }
 
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
-  font-family: "Roboto Slab", serif;
-  color: #f9d3b4;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #f2e9e4;
 }
 
 .movie:hover div:nth-of-type(2) {

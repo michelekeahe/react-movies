@@ -11,7 +11,7 @@ const App = () => {
    const [movies, setMovies] = useState([]);
 
    useEffect(() => {
-      searchMovies("Batman");
+      searchMovies("cow");
    }, []);
 
    const searchMovies = async (title) => {
@@ -23,8 +23,11 @@ const App = () => {
 
    return (
       <div className="app">
-         <h1>MovieWorld</h1>
-
+         <div className="title">
+            <img src="https://cdn-icons-png.flaticon.com/512/2395/2395765.png" width="15%"></img>
+            <h1>Moo-vies</h1>
+         </div>
+         
          <div className="search">
             <input
                value={searchTerm}
