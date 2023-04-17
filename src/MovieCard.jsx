@@ -1,7 +1,10 @@
+// Function: Style movie cards
 import React from 'react';
 
+// 'movie' prop to pass info. like a variable
 const MovieCard = ({ movie }) => {
    return (
+      // Movie information. Year, title, poster, etc.
       <div className="movie">
          <div>
             <p>{movie.Year}</p>

@@ -1,3 +1,5 @@
+/* Function: Style movie app */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap');
 
 * {
@@ -7,8 +9,6 @@
 }
 
 :root {
-  --font-montserrat: "Montserrat", serif;
-  --font-raleway: "Raleway", sans-serif;
   --font-playfair: "Playfair Display", serif;
   --font-lato: 'Lato', sans-serif;
 }
